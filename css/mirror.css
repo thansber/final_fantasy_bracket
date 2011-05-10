@@ -2,11 +2,11 @@
 .mirror h2.champion { padding-left: 40px; padding-right: 0px; width: 210px; }
 .mirror .round { float: right; }
 .mirror .party.bottom { border-left: 2px solid white; border-right: 0; }
-.mirror .party p.charImage { float:right; margin-left:6px; margin-right:0; background-image:url(../images/char_classes_mirror.png); }
+.mirror .party p.charImage { margin-left:6px; margin-right:0; background-image:url(../images/char_classes_mirror.png); }
 .mirror .party .charImage.Fi { background-position:-180px 0; }
 .mirror .party .charImage.Th { background-position:-144px 0; }
 .mirror .party .charImage.BB { background-position:-108px 0; }
 .mirror .party .charImage.RM { background-position:-72px 0; }
 .mirror .party .charImage.WM { background-position:-36px 0; }
-.mirror .party .charImage.BM { background-position:-0 0; }
+.mirror .party .charImage.BM { background-position:0 0; }
 .mirror .connector { float: right; }
