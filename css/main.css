@@ -1,0 +1,54 @@
+body { font-family: verdana; margin: 0 0 0 16px; background-color: black; color: white; width: 1200px; }
+br { clear: both; }
+p { padding: 0; margin: 0; }
+img { border: 0; }
+a { color: white; }
+
+.hidden { display: none; }
+
+.bye span { font-size: 1.5em; padding-left: 70px; padding-top: 20px; display: block; }
+
+p.winner { font-size: 1.8em; color: green; padding-left: 20px; padding-bottom: 8px; }
+
+h1 { float: left; }
+#roundHeaders { clear: both; margin-top: 40px; }
+h2 { float: left; width: 120px; padding-left: 40px; padding-right: 80px; }
+h2.champion { padding-left: 20px; padding-right: 0; width: 300px; }
+#upperRight { float: right; }
+h4 { padding: 0; margin: 12px 20px 0 0; }
+h4 a { text-decoration: none; color: blue; }
+h4 a:hover { color: red; }
+h5 { width: 200px; }
+
+#bracket { clear: both; }
+.round { width: 200px; float: left; }
+.party { height: 58px; border-bottom: 2px solid white; }
+.party.bottom { border-right: 2px solid white; margin-bottom: 20px; padding-top: 8px; }
+.party img { padding-right: 6px; }
+.party p.charImage { width:36px; height:52px; float:left; margin-right: 6px; background-image:url(../images/char_classes.png); background-repeat:no-repeat; background-position:200px 200px;}
+.party .charImage.Fi { background-position:0 0; }
+.party .charImage.Th { background-position:-36px 0; }
+.party .charImage.BB { background-position:-72px 0; }
+.party .charImage.RM { background-position:-108px 0; }
+.party .charImage.WM { background-position:-144px 0; }
+.party .charImage.BM { background-position:-180px 0; }
+
+.connector { float: left; width: 50px; }
+.connector p { height: 74px; margin-top: 16px; margin-bottom: 72px; border-bottom: 2px solid white; }
+
+#round2 { margin-top: 26px; }
+#round2 .party { padding-top: 6px; }
+#round2 .party.bottom { padding-top: 88px; margin-bottom: 82px; }
+#round2connectors p { height: 148px; margin-bottom: 148px; }
+
+#round3 { margin-top: 106px; }
+#round3 .party.bottom { padding-top: 238px; margin-bottom: 238px; }
+#round3connectors p { height: 288px; margin-bottom: 308px; }
+
+#round4 { margin-top: 246px; }
+#round4 .party.bottom { padding-top: 538px; }
+#round4connectors p { height: 588px; }
+
+#round5 { margin-top: 503px; }
+#round5 .party { margin-top: 43px; }
+#round5 .party.winner { margin-top: 0px; }

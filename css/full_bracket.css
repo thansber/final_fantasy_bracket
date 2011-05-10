@@ -1,0 +1,6 @@
+body { font-family: verdana; margin: 16px 0 0 16px; background-color: black; width: 899px; }
+img { border: 0; }
+a { text-decoration: none; }
+div#left { float: left; }
+div#right { float: right; }
+div#championship { float: left; margin-top: 150px; }

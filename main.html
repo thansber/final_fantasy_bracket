@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Final Fantasy Tournament - Regional</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/mirror.css" />
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css" />
+<![endif]-->
+    <script type="text/javascript" src="js/lib/jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="js/urlHelper.js"></script>
+    <script type="text/javascript" src="js/bracketLoader.js"></script>
+    <script type="text/javascript" src="js/regions.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        FFBracketLoader.loadRegion(FFUrlHelper.getParam("region"));
+    });
+    </script>
+</head>
+
+<body>
+
+<h1></h1>
+<div id="upperRight">
+    <h4><a href="full_bracket.html">Back to entire bracket</a></h4>
+</div>
+<div id="roundHeaders">
+    <h2>Round 1</h2>
+    <h2>Round 2</h2>
+    <h2>Round 3</h2>
+    <h2 class="champion">Regional Final</h2>
+</div>
+<div id="bracket">
+  <div id="round1" class="round"></div>
+  <div id="round1connectors" class="connector"></div>
+  <div id="round2" class="round"></div>
+  <div id="round2connectors" class="connector"></div>
+  <div id="round3" class="round"></div>
+  <div id="round3connectors" class="connector"></div>
+  <div id="round4" class="round"></div>
+  <div id="round4connectors" class="connector"></div>
+  <div id="round5" class="round"></div>
+</div>
+
+<br />
+
+<div id="charImagesMirrored" class="hidden">
+  <img class="Fi" src="images/mirror/Knight.gif" />
+  <img class="Th" src="images/mirror/Ninja.gif" />
+  <img class="BB" src="images/mirror/Master.gif" />
+  <img class="RM" src="images/mirror/RedWizard.gif" />
+  <img class="WM" src="images/mirror/WhiteWizard.gif" />
+  <img class="BM" src="images/mirror/BlackWizard.gif" />
+</div>
+
+<div id="charImages" class="hidden">
+  <img class="Fi" src="images/Knight.gif" />
+  <img class="Th" src="images/Ninja.gif" />
+  <img class="BB" src="images/Master.gif" />
+  <img class="RM" src="images/RedWizard.gif" />
+  <img class="WM" src="images/WhiteWizard.gif" />
+  <img class="BM" src="images/BlackWizard.gif" />
+</div>
+
+</body>
+</html>
