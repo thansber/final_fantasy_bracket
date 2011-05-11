@@ -143,6 +143,16 @@ var FFRegionData = (function() {
     round4:[["", ""]],
     round5:[""]}; 
   
+  var Championship = {
+    round1:[["Fi - BB - RM - WM", "Fi - BB - RM - WM"] // Coneria v Pravoka
+           ,["Fi - BB - RM - WM", "Fi - BB - RM - WM"] // Elfland v Melmond
+           ,["BB - BB - RM - WM", "BB - BB - RM - WM"] // Crescent Lake v Onrac
+           ,["BB - BB - RM - WM", "BB - BB - RM - WM"]] // Gaia v Lefein
+   ,round2:[["Fi - BB - RM - WM", "Fi - BB - RM - WM"]
+           ,["BB - BB - RM - WM", "BB - BB - RM - WM"]]
+   ,round3:[["Fi - BB - RM - WM", "BB - BB - RM - WM"]]
+   ,round4:["Fi - BB - RM - WM"]};
+  
   // OLD Coneria results
   /*
    *  round2:[["Fi - Fi - BM - BM", "Fi - BB - RM - WM"]
@@ -170,7 +180,8 @@ var FFRegionData = (function() {
     "Crescent Lake" : CrescentLake, 
     Onrac : Onrac, 
     Gaia : Gaia,
-    Lefein : Lefein
+    Lefein : Lefein,
+    Championship : Championship
   }
     
 })();

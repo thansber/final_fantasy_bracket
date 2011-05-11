@@ -1,0 +1,65 @@
+body { font-family:verdana; margin:16px; background-color:black; color:white; width:1550px; }
+br { clear:both; }
+p,h1,h2,h3,h4,h5,h6 { padding:0; margin:0; }
+img { border:0; }
+a { color:white; }
+
+.hidden { display:none; }
+
+h1 { float:left; width:80%; }
+h4 { float:right; padding:0; margin:20px 20px 0 0; }
+h4 a { text-decoration:none; color:blue; }
+h4 a:hover { color:red; }
+
+.quarter { width:200px; }
+.semi { width:200px; }
+.final { width:200px; }
+
+.bracket { float:left; width:650px; }
+.bracket .headings { clear:both; width:100%; height:30px; margin-top:40px; margin-bottom:30px; }
+.bracket h2 { float:left; margin:0;} 
+.bracket h2.quarter { margin-left:5px; }
+.bracket h2.semi { margin-left:50px; }
+.bracket .round { float:left;  }
+.bracket .party { height:58px; border-bottom:2px solid white; }
+.bracket .round .party.bottom { border-right:2px solid white; margin-bottom:20px; padding-top:8px; }
+.bracket .round .party img { padding-right:6px; }
+.bracket .connector { float:left; width:50px; }
+.bracket .connector p { height:74px; margin-top:16px; margin-bottom:72px; border-bottom:2px solid white; }
+.bracket .quarter.connector { margin-left:0; }
+.bracket .semi.round { margin-top:26px; }
+.bracket .semi.round .party { padding-top:6px; }
+.bracket .semi.round .party.bottom { padding-top:88px; margin-bottom:82px; }
+.bracket .semi.connector p { height:148px; margin-bottom:148px; }
+.bracket .final.round { margin-top:106px; }
+.bracket .final.round .party { padding-left:20px; }
+
+.right.bracket { float:right; margin-left:0; }
+.right.bracket .headings { float:right; }
+.right.bracket .headings h2 { float:right; }
+.right.bracket .party { padding-left:20px; }
+.right.bracket .round { float:right; }
+.right.bracket .round .party.bottom { border-left:2px solid white; border-right:0; }
+.right.bracket .round .party img { padding-right:6px; }
+.right.bracket .connector { float:right; }
+.right.bracket .final.round .party { padding-left:10px; }
+
+.champion { width:250px; height:392px; float:right; }
+.champion h2 { text-align:center; width:100%; }
+.champion .party { margin:40px 20px; }
+
+.party .charImage { width:36px; height:52px; float:left; margin-right:6px; background-image:url(../images/char_classes.png); background-repeat:no-repeat; background-position:200px 200px;}
+.party .charImage.Fi { background-position:0 0; }
+.party .charImage.Th { background-position:-36px 0; }
+.party .charImage.BB { background-position:-72px 0; }
+.party .charImage.RM { background-position:-108px 0; }
+.party .charImage.WM { background-position:-144px 0; }
+.party .charImage.BM { background-position:-180px 0; }
+
+.party.mirror .charImage { margin-left:6px; margin-right:0; background-image:url(../images/char_classes_mirror.png); }
+.party.mirror .charImage.Fi { background-position:-180px 0; }
+.party.mirror .charImage.Th { background-position:-144px 0; }
+.party.mirror .charImage.BB { background-position:-108px 0; }
+.party.mirror .charImage.RM { background-position:-72px 0; }
+.party.mirror .charImage.WM { background-position:-36px 0; }
+.party.mirror .charImage.BM { background-position:0 0; }

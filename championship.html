@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Final Fantasy Tournament - Championship</title>
+  <link rel="stylesheet" type="text/css" href="css/championship.css" />
+  <script type="text/javascript" src="js/lib/jquery-1.6.min.js"></script>
+  <script type="text/javascript" src="js/urlHelper.js"></script>
+  <script type="text/javascript" src="js/bracketLoader.js"></script>
+  <script type="text/javascript" src="js/regions.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+     FFBracketLoader.loadRegion("Championship");
+  });
+  </script>
+</head>
+
+<body>
+
+<h1>Championship</h1>
+<h4><a href="full_bracket.html">Back to entire bracket</a></h4>
+
+<div class="left bracket">
+  <div class="headings">
+    <h2 class="quarter">Quarter Finals</h2>
+    <h2 class="semi">Semi Finals</h2>
+  </div>
+  <div class="quarter round"></div>
+  <div class="quarter connector"><p></p><p></p></div>
+  <div class="semi round"></div>
+  <div class="final round"></div>
+</div>
+
+<div class="right bracket">
+  <div class="headings">
+    <h2 class="quarter">Quarter Finals</h2>
+    <h2 class="semi">Semi Finals</h2>
+  </div>
+  <div class="quarter round"></div>
+  <div class="quarter connector"><p></p><p></p></div>
+  <div class="semi round"></div>
+  <div class="final round"></div>
+</div>
+
+<div class="champion bracket">
+  <div class="headings"><h2>Champion</h2></div>
+  <div class="party"></div>
+</div>
+
+</body>
+</html>
