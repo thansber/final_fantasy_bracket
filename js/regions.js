@@ -9,13 +9,14 @@ var FFRegionData = (function() {
            ,["Th - WM - BM - BM", "BB - BB - BB - BM"]
            ,["Fi - Fi - Fi - BB", "RM - RM - WM - WM"]
            ,["Th - BM - BM - BM", "Fi - Fi - Fi - Fi"]],
-    round2:[["", ""]
-           ,["", ""]
-           ,["", ""]
-           ,["", ""]],
-    round3:[["", ""],["", ""]],
-    round4:[["", ""]],
-    round5:[""]};
+    round2:[["Fi - Fi - BM - BM", "Fi - BB - RM - WM"]
+           ,["Fi - BB - RM - RM", "WM - BM - BM - BM"]
+           ,["Fi - BB - WM - BM", "Th - WM - BM - BM"]
+           ,["RM - RM - WM - WM", "Th - BM - BM - BM"]],
+    round3:[["Fi - Fi - BM - BM", "WM - BM - BM - BM"]
+           ,["Fi - BB - WM - BM", "Th - BM - BM - BM"]],
+    round4:[["WM - BM - BM - BM", "Fi - BB - WM - BM"]],
+    round5:["WM - BM - BM - BM"]};
   
   var Pravoka = {
     round1:[["Fi - Th - Th - BM", "Fi - RM - BM - BM"]
@@ -144,7 +145,7 @@ var FFRegionData = (function() {
     round5:[""]}; 
   
   var Championship = {
-    round1:[["", ""] // Coneria v Pravoka
+    round1:[["WM - BM - BM - BM", ""] // Coneria v Pravoka
            ,["", ""] // Elfland v Melmond
            ,["", ""] // Crescent Lake v Onrac
            ,["", ""]] // Gaia v Lefein
