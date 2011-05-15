@@ -1,40 +1,5 @@
 var FFRegionData = (function() {
 
-  var Coneria = {
-    round1:[["Fi - Fi - BM - BM", ""]
-           ,["Th - BB - BM - BM", "Fi - BB - RM - WM"]
-           ,["Fi - BB - RM - RM", "BB - RM - RM - BM"]
-           ,["Th - RM - WM - BM", "WM - BM - BM - BM"]
-           ,["Fi - BB - WM - BM", "Th - Th - Th - BB"]
-           ,["Th - WM - BM - BM", "BB - BB - BB - BM"]
-           ,["Fi - Fi - Fi - BB", "RM - RM - WM - WM"]
-           ,["Th - BM - BM - BM", "Fi - Fi - Fi - Fi"]],
-    round2:[["Fi - Fi - BM - BM", "Fi - BB - RM - WM"]
-           ,["Fi - BB - RM - RM", "WM - BM - BM - BM"]
-           ,["Fi - BB - WM - BM", "Th - WM - BM - BM"]
-           ,["RM - RM - WM - WM", "Th - BM - BM - BM"]],
-    round3:[["Fi - Fi - BM - BM", "WM - BM - BM - BM"]
-           ,["Fi - BB - WM - BM", "Th - BM - BM - BM"]],
-    round4:[["WM - BM - BM - BM", "Fi - BB - WM - BM"]],
-    round5:["WM - BM - BM - BM"]};
-  
-  var Pravoka = {
-    round1:[["Fi - Th - Th - BM", "Fi - RM - BM - BM"]
-           ,["Th - Th - Th - WM", "BB - RM - RM - RM"]
-           ,["Fi - RM - RM - BM", "Fi - Th - Th - WM"]
-           ,["Fi - Fi - RM - WM", "Fi - Fi - BB - RM"]
-           ,["Fi - Th - RM - RM", "Th - WM - WM - WM"]
-           ,["BB - WM - BM - BM", "Th - BB - WM - BM"]
-           ,["Fi - BB - WM - WM", "Th - RM - BM - BM"]
-           ,["Fi - Th - BB - BB", "BB - WM - WM - WM"]],
-    round2:[["", ""]
-           ,["", ""]
-           ,["", ""]
-           ,["", ""]],
-    round3:[["", ""],["", ""]],
-    round4:[["", ""]],
-    round5:[""]};
-
   var Elfland = {
     round1:[["Fi - RM - RM - RM", "RM - WM - WM - BM"]
            ,["Th - BB - BB - BB", "BB - RM - WM - BM"]
@@ -48,7 +13,8 @@ var FFRegionData = (function() {
            ,["", ""]
            ,["", ""]
            ,["", ""]],
-    round3:[["", ""],["", ""]],
+    round3:[["", ""]
+           ,["", ""]],
     round4:[["", ""]],
     round5:[""]};
   
@@ -172,6 +138,42 @@ var FFRegionData = (function() {
   ,["Th - WM - WM - WM", "BB - WM - BM - BM"]
   ,["", "BB - WM - WM - WM"]],
   */
+  
+  var Coneria = {
+      round1:[["Fi - Fi - BM - BM", ""]
+             ,["Th - BB - BM - BM", "Fi - BB - RM - WM"]
+             ,["Fi - BB - RM - RM", "BB - RM - RM - BM"]
+             ,["Th - RM - WM - BM", "WM - BM - BM - BM"]
+             ,["Fi - BB - WM - BM", "Th - Th - Th - BB"]
+             ,["Th - WM - BM - BM", "BB - BB - BB - BM"]
+             ,["Fi - Fi - Fi - BB", "RM - RM - WM - WM"]
+             ,["Th - BM - BM - BM", "Fi - Fi - Fi - Fi"]],
+      round2:[["Fi - Fi - BM - BM", "Fi - BB - RM - WM"]
+             ,["Fi - BB - RM - RM", "WM - BM - BM - BM"]
+             ,["Fi - BB - WM - BM", "Th - WM - BM - BM"]
+             ,["RM - RM - WM - WM", "Th - BM - BM - BM"]],
+      round3:[["Fi - Fi - BM - BM", "WM - BM - BM - BM"]
+             ,["Fi - BB - WM - BM", "Th - BM - BM - BM"]],
+      round4:[["WM - BM - BM - BM", "Fi - BB - WM - BM"]],
+      round5:["WM - BM - BM - BM"]};
+    
+  var Pravoka = {
+    round1:[["Fi - Th - Th - BM", "Fi - RM - BM - BM"]
+           ,["Th - Th - Th - WM", "BB - RM - RM - RM"]
+           ,["Fi - RM - RM - BM", "Fi - Th - Th - WM"]
+           ,["Fi - Fi - RM - WM", "Fi - Fi - BB - RM"]
+           ,["Fi - Th - RM - RM", "Th - WM - WM - WM"]
+           ,["BB - WM - BM - BM", "Th - BB - WM - BM"]
+           ,["Fi - BB - WM - WM", "Th - RM - BM - BM"]
+           ,["Fi - Th - BB - BB", "BB - WM - WM - WM"]],
+    round2:[["Fi - RM - BM - BM", "BB - RM - RM - RM"]
+           ,["Fi - RM - RM - BM", "Fi - Fi - RM - WM"]
+           ,["Th - WM - WM - WM", "BB - WM - BM - BM"]
+           ,["Fi - BB - WM - WM", "BB - WM - WM - WM"]],
+    round3:[["Fi - RM - BM - BM", "Fi - Fi - RM - WM"]
+           ,["Th - WM - WM - WM", "BB - WM - WM - WM"]],
+    round4:[["Fi - RM - BM - BM", "BB - WM - WM - WM"]],
+    round5:["BB - WM - WM - WM"]};
   
   return {
     Coneria : Coneria,
