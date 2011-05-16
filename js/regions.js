@@ -111,7 +111,7 @@ var FFRegionData = (function() {
     round5:[""]}; 
   
   var Championship = {
-    round1:[["WM - BM - BM - BM", ""] // Coneria v Pravoka
+    round1:[["WM - BM - BM - BM", "BB - WM - WM - WM"] // Coneria v Pravoka
            ,["", ""] // Elfland v Melmond
            ,["", ""] // Crescent Lake v Onrac
            ,["", ""]] // Gaia v Lefein
