@@ -10,7 +10,7 @@ var FFBracketLoader = (function() {
     $party.appendTo($round);
     
     if (partyText.length > 0) {
-      var partyChars = partyText.split(" - ");
+      var partyChars = partyText.split("-");
       for (var c in partyChars) {
         var $charImage = $("<p/>").addClass("charImage").addClass(partyChars[c]);
         if (isMirrored()) {
