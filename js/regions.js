@@ -175,6 +175,15 @@ var FFRegionData = (function() {
     round4:[["Fi - RM - BM - BM", "BB - WM - WM - WM"]],
     round5:["BB - WM - WM - WM"]};
   
+  var all = {"coneria":{rounds:Coneria, name:"Coneria"}
+            ,"pravoka":{rounds:Pravoka, name:"Pravoka"}
+            ,"elfland":{rounds:Elfland, name:"Elfland"}
+            ,"melmond":{rounds:Melmond, name:"Melmond"}
+            ,"crescent_lake":{rounds:CrescentLake, name:"Crescent Lake", mirrored:true}
+            ,"onrac":{rounds:Onrac, name:"Onrac", mirrored:true}
+            ,"gaia":{rounds:Gaia, name:"Gaia", mirrored:true}
+            ,"lefein":{rounds:Lefein, name:"Lefein", mirrored:true}};
+  
   return {
     Coneria : Coneria,
     Pravoka : Pravoka,
@@ -184,7 +193,8 @@ var FFRegionData = (function() {
     Onrac : Onrac, 
     Gaia : Gaia,
     Lefein : Lefein,
-    Championship : Championship
+    Championship : Championship,
+    AllRegions : all
   }
     
 })();

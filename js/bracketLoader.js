@@ -4,8 +4,9 @@ var FFBracketLoader = (function() {
     return FFUrlHelper.getParam("mirror").length > 0;
   }
   
-  var renderParty = function($round, partyText) {
+  var renderParty = function($round, partyText, opt) {
     var $party = $("<div/>").addClass("party");
+    var options = opt || {};
     $party.appendTo($round);
     
     if (partyText.length > 0) {
@@ -17,7 +18,7 @@ var FFBracketLoader = (function() {
         }
         $charImage.appendTo($party);
       }
-    } else if ($round.attr("id") == "round1") {
+    } else if (options.firstRound) {
       $party.addClass("bye").append($("<span>BYE</span>"));
     }
     
@@ -93,7 +94,37 @@ var FFBracketLoader = (function() {
     }
   }
   
+  var loadFullBracket = function() {
+    var ordinals = ["first", "second", "third", "fourth", "fifth"];
+    for (var r in FFRegionData.AllRegions) {
+      var region = FFRegionData.AllRegions[r];
+      var rounds = region.rounds;
+      var $region = $(".region." + r.toLowerCase());
+      var i = 0;
+
+      jQuery.each(rounds, function(roundName, round) {
+        var $round = $("<div/>").addClass("round");
+        $round.addClass(ordinals[i]);
+        $round.addClass(i > 0 ? "connector" : "");
+        $round.addClass(region.mirrored ? "mirror" : "");
+        for (var m in round) {
+          var matchup = round[m];
+          if (round.length == 1 && !jQuery.isArray(matchup)) {
+            renderParty($round, matchup);
+          } else {
+            var opt = {firstRound:(i == 0)};
+            renderParty($round, matchup[0]);
+            renderParty($round, matchup[1], opt).addClass("bottom");
+          }
+        }
+        $region.append($round);
+        i++;
+      });
+    }
+  };
+  
   return {
     loadRegion : function(region) { return loadRegion(region); }
+   ,loadFullBracket : loadFullBracket
   };
 })();

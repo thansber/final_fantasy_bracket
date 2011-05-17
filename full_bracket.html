@@ -4,26 +4,48 @@
 <head>
   <title>Final Fantasy Tournament - Full Bracket</title>
   <link rel="stylesheet" type="text/css" href="css/full_bracket.css" />
+  <script type="text/javascript" src="js/lib/jquery-1.6.min.js"></script>
+  <script type="text/javascript" src="js/urlHelper.js"></script>
+  <script type="text/javascript" src="js/regions.js"></script>
+  <script type="text/javascript" src="js/bracketLoader.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    FFBracketLoader.loadFullBracket();
+    
+    $(".region").click(function() {
+      var $this = $(this);
+      var regionName = $this.attr("class").split(" ")[1];
+      var region = FFRegionData.AllRegions[regionName];
+      var url = "main.html?region=" + region.name;
+      if (region.mirrored) {
+        url += "&mirror=true";
+      }
+      window.location = url;
+    });
+    
+    $("#championship").click(function() {
+      window.location = "championship.html";
+    });
+  });
+  </script>
 </head>
 
 <body>
 
 <div id="left">
-  <div id="coneria"><a href="main.html?region=Coneria" title="Coneria Region"><img src="images/region/coneria.png" /></a></div>
-  <div id="pravoka"><a href="main.html?region=Pravoka" title="Pravoka Region"><img src="images/region/pravoka.png" /></a></div>
-  <div id="elfland"><a href="main.html?region=Elfland" title="Elfland Region"><img src="images/region/elfland.png" /></a></div>
-  <div id="melmond"><a href="main.html?region=Melmond" title="Melmond Region"><img src="images/region/melmond.png" /></a></div>
+  <div class="region coneria" title="Coneria Region"><h1>Coneria Region</h1></div>
+  <div class="region pravoka" title="Pravoka Region"><h1>Pravoka Region</h1></div>
+  <div class="region elfland" title="Elfland Region"><h1>Elfland Region</h1></div>
+  <div class="region melmond" title="Melmond Region"><h1>Melmond Region</h1></div>
 </div>
 
-<div id="championship">
-  <a href="championship.html" title="Championship"><img src="images/championship.png" /></a>
-</div>
+<div id="championship" title="Championship"><h1>Championship Rounds</h1></div>
 
 <div id="right">
-  <div id="crescent_lake"><a href="main.html?region=Crescent Lake&mirror=true" title="Crescent Lake Region"><img src="images/region/crescent_lake.png" /></a></div>
-  <div id="onrac"><a href="main.html?region=Onrac&mirror=true" title="Onrac Region"><img src="images/region/onrac.png" /></a></div>
-  <div id="gaia"><a href="main.html?region=Gaia&mirror=true" title="Gaia Region"><img src="images/region/gaia.png" /></a></div>
-  <div id="lefein"><a href="main.html?region=Lefein&mirror=true" title="Lefein Region"><img src="images/region/lefein.png" /></a></div>
+  <div class="region crescent_lake" title="Crescent Lake Region"><h1>Crescent Lake Region</h1></div>
+  <div class="region onrac" title="Onrac Region"><h1>Onrac Region</h1></div>
+  <div class="region gaia" title="Gaia Region"><h1>Gaia Region</h1></div>
+  <div class="region lefein" title="Lefein Region"><h1>Lefein Region</h1></div>
 </div>
 
 </body>

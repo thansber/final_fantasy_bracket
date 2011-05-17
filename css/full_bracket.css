@@ -1,6 +1,44 @@
-body { font-family: verdana; margin: 16px 0 0 16px; background-color: black; width: 899px; }
+body { font-family: verdana; margin: 16px 0 0 16px; background-color: black; width:900px; height:1300px;}
 img { border: 0; }
 a { text-decoration: none; }
-div#left { float: left; }
-div#right { float: right; }
-div#championship { float: left; margin-top: 150px; }
+p { margin:0; padding:0; }
+
+.region { width:300px; height:300px; margin-bottom:10px; float:left; clear:left; position:relative; cursor:pointer; }
+.region h1 { color:white; font-size:1.1em; font-weight:bold; padding:0; margin:0; position:absolute; top:45.4%; left:20%; }
+.region.melmond h1 { left:18%; }
+#right .region h1 { left:30%;}
+.round { float:left; }
+.round.connector .party { padding-left:8px; }
+.party { width:50px; height:15px; border-bottom:1px solid #808080; }
+.party.bottom { padding-top:3px; margin-bottom:3px; border-right:1px solid #808080; margin-top:-1px;}
+.party.bye { color:#ABABAB; font-size:0.6em; text-align:center;}
+.party .charImage { width:9px; height:13px; float:left; margin-right:2px; background-image:url(../images/char_classes_small.png); background-repeat:no-repeat; }
+.party .charImage.Fi { background-position:0 0; }
+.party .charImage.Th { background-position:-9px 0; }
+.party .charImage.BB { background-position:-18px 0; }
+.party .charImage.RM { background-position:-27px 0; }
+.party .charImage.WM { background-position:-36px 0; }
+.party .charImage.BM { background-position:-45px 0; }
+
+.round.second { margin-top:10px; }
+.round.second .party.bottom { padding-top:21px; margin-bottom:22px; }
+.round.third { margin-top:26px; }
+.round.third .party.bottom { padding-top:60px; margin-bottom:59px; }
+.round.fourth { margin-top:64px; }
+.round.fourth .party.bottom { padding-top:135px; }
+.round.fifth { margin-top:132px; }
+
+.round.mirror { float:right; }
+.round.mirror.connector .party { padding-right:8px; padding-left:0;}
+.round.mirror .party.bottom { border-left:1px solid #808080; border-right:0; }
+.round.mirror .party .charImage { margin-left:2px; margin-right:0; background-image:url(../images/char_classes_mirror_small.png); }
+.round.mirror .party .charImage.Fi { background-position:-45px 0; }
+.round.mirror .party .charImage.Th { background-position:-36px 0; }
+.round.mirror .party .charImage.BB { background-position:-27px 0; }
+.round.mirror .party .charImage.RM { background-position:-18px 0; }
+.round.mirror .party .charImage.WM { background-position:-9px 0; }
+.round.mirror .party .charImage.BM { background-position:0 0; }
+
+#left { float: left; }
+#right { float: right; }
+#championship { float: left; margin-top:260px; height:960px; width:300px; cursor:pointer; color:white; text-align:center; padding-top:100px;}
