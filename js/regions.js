@@ -1,25 +1,5 @@
 var FFRegionData = (function() {
 
-  var Melmond = {
-    round1:[["WM-WM-WM-BM", "Fi-Fi-BB-BM"]
-           ,["Fi-Th-RM-WM", "Fi-Th-Th-RM"]
-           ,["RM-RM-RM-RM", "BB-BB-WM-WM"]
-           ,["BB-BB-RM-WM", "Fi-Fi-Fi-RM"]
-           ,["Th-Th-Th-Th", "Th-RM-RM-BM"]
-           ,["Fi-Th-BB-WM", "BB-BB-BB-BB"]
-           ,["Th-Th-Th-RM", "RM-RM-BM-BM"]
-           ,["Fi-RM-WM-BM", "Fi-Th-BB-RM"]],
-    round2:[["", ""]
-           ,["", ""]
-           ,["", ""]
-           ,["", ""]],
-    round3:[["", ""]
-           ,["", ""]],
-    round4:[["", ""]],
-    round5:[""]};
-  
-  
-
   var CrescentLake = {
     round1:[["Fi-BB-BB-WM", ""]
            ,["RM-RM-RM-WM", "Fi-BM-BM-BM"]
@@ -94,32 +74,13 @@ var FFRegionData = (function() {
   
   var Championship = {
     round1:[["WM-BM-BM-BM", "BB-WM-WM-WM"] // Coneria v Pravoka
-           ,["", ""] // Elfland v Melmond
+           ,["WM-WM-BM-BM", "WM-WM-WM-BM"] // Elfland v Melmond
            ,["", ""] // Crescent Lake v Onrac
            ,["", ""]] // Gaia v Lefein
    ,round2:[["", ""]
            ,["", ""]]
    ,round3:[["", ""]]
    ,round4:[""]};
-  
-  // OLD Coneria results
-  /*
-   *  round2:[["Fi-Fi-BM-BM", "Fi-BB-RM-WM"]
-               ,["BB-RM-RM-BM", "Th-RM-WM-BM"]
-               ,["Fi-BB-WM-BM", "Th-WM-BM-BM"]
-               ,["RM-RM-WM-WM", "Th-BM-BM-BM"]],
-        round3:[["Fi-Fi-BM-BM", "Th-RM-WM-BM"]
-               ,["Th-WM-BM-BM", "RM-RM-WM-WM"]],
-        round4:[["Th-RM-WM-BM", "RM-RM-WM-WM"]],
-        round5:["Th-RM-WM-BM"]};
-   */
-  // OLD Pravoka results
-  /* 
-   round2:[["Fi-RM-BM-BM", ""]
-  ,["Fi-RM-RM-BM", "Fi-Fi-RM-WM"]
-  ,["Th-WM-WM-WM", "BB-WM-BM-BM"]
-  ,["", "BB-WM-WM-WM"]],
-  */
   
   var Coneria = {
       round1:[["Fi-Fi-BM-BM", ""]
@@ -174,6 +135,24 @@ var FFRegionData = (function() {
              ,["Fi-RM-WM-WM", "Fi-WM-BM-BM"]],
       round4:[["WM-WM-BM-BM", "Fi-WM-BM-BM"]],
       round5:["WM-WM-BM-BM"]};
+  
+  var Melmond = {
+      round1:[["WM-WM-WM-BM", "Fi-Fi-BB-BM"]
+             ,["Fi-Th-RM-WM", "Fi-Th-Th-RM"]
+             ,["RM-RM-RM-RM", "BB-BB-WM-WM"]
+             ,["BB-BB-RM-WM", "Fi-Fi-Fi-RM"]
+             ,["Th-Th-Th-Th", "Th-RM-RM-BM"]
+             ,["Fi-Th-BB-WM", "BB-BB-BB-BB"]
+             ,["Th-Th-Th-RM", "RM-RM-BM-BM"]
+             ,["Fi-RM-WM-BM", "Fi-Th-BB-RM"]],
+      round2:[["WM-WM-WM-BM", "Fi-Th-RM-WM"]
+             ,["BB-BB-WM-WM", "Fi-Fi-Fi-RM"]
+             ,["Th-RM-RM-BM", "Fi-Th-BB-WM"]
+             ,["RM-RM-BM-BM", "Fi-RM-WM-BM"]],
+      round3:[["WM-WM-WM-BM", "BB-BB-WM-WM"]
+             ,["Fi-Th-BB-WM", "Fi-RM-WM-BM"]],
+      round4:[["WM-WM-WM-BM", "Fi-RM-WM-BM"]],
+      round5:["WM-WM-WM-BM"]};
   
   var all = {"coneria":{rounds:Coneria, name:"Coneria"}
             ,"pravoka":{rounds:Pravoka, name:"Pravoka"}
