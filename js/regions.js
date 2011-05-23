@@ -1,23 +1,5 @@
 var FFRegionData = (function() {
 
-  var CrescentLake = {
-    round1:[["Fi-BB-BB-WM", ""]
-           ,["RM-RM-RM-WM", "Fi-BM-BM-BM"]
-           ,["Th-BB-RM-BM", "BB-BB-BB-RM"]
-           ,["BM-BM-BM-BM", "Fi-Th-BM-BM"]
-           ,["Fi-Fi-Th-BM", "Fi-Fi-WM-BM"]
-           ,["Th-Th-WM-BM", "RM-BM-BM-BM"]
-           ,["Th-RM-RM-WM", "Fi-BB-BB-BM"]
-           ,["Th-BB-RM-WM", "Fi-Fi-RM-BM"]],
-    round2:[["", ""]
-           ,["", ""]
-           ,["", ""]
-           ,["", ""]],
-    round3:[["", ""]
-           ,["", ""]],
-    round4:[["", ""]],
-    round5:[""]};
-  
   var Onrac = {
     round1:[["BB-RM-RM-WM", "Th-BB-BB-RM"]
            ,["Fi-Fi-Th-Th", "Th-Th-WM-WM"]
@@ -75,7 +57,7 @@ var FFRegionData = (function() {
   var Championship = {
     round1:[["WM-BM-BM-BM", "BB-WM-WM-WM"] // Coneria v Pravoka
            ,["WM-WM-BM-BM", "WM-WM-WM-BM"] // Elfland v Melmond
-           ,["", ""] // Crescent Lake v Onrac
+           ,["BM-BM-BM-BM", ""] // Crescent Lake v Onrac
            ,["", ""]] // Gaia v Lefein
    ,round2:[["", ""]
            ,["", ""]]
@@ -153,6 +135,24 @@ var FFRegionData = (function() {
              ,["Fi-Th-BB-WM", "Fi-RM-WM-BM"]],
       round4:[["WM-WM-WM-BM", "Fi-RM-WM-BM"]],
       round5:["WM-WM-WM-BM"]};
+  
+  var CrescentLake = {
+      round1:[["Fi-BB-BB-WM", ""]
+             ,["RM-RM-RM-WM", "Fi-BM-BM-BM"]
+             ,["Th-BB-RM-BM", "BB-BB-BB-RM"]
+             ,["BM-BM-BM-BM", "Fi-Th-BM-BM"]
+             ,["Fi-Fi-Th-BM", "Fi-Fi-WM-BM"]
+             ,["Th-Th-WM-BM", "RM-BM-BM-BM"]
+             ,["Th-RM-RM-WM", "Fi-BB-BB-BM"]
+             ,["Th-BB-RM-WM", "Fi-Fi-RM-BM"]],
+      round2:[["Fi-BB-BB-WM", "Fi-BM-BM-BM"]
+             ,["BB-BB-BB-RM", "BM-BM-BM-BM"]
+             ,["Fi-Fi-WM-BM", "RM-BM-BM-BM"]
+             ,["Fi-BB-BB-BM", "Fi-Fi-RM-BM"]],
+      round3:[["Fi-BM-BM-BM", "BM-BM-BM-BM"]
+             ,["Fi-Fi-WM-BM", "Fi-BB-BB-BM"]],
+      round4:[["BM-BM-BM-BM", "Fi-Fi-WM-BM"]],
+      round5:["BM-BM-BM-BM"]};
   
   var all = {"coneria":{rounds:Coneria, name:"Coneria"}
             ,"pravoka":{rounds:Pravoka, name:"Pravoka"}
