@@ -1,64 +1,10 @@
 var FFRegionData = (function() {
 
-  var Onrac = {
-    round1:[["BB-RM-RM-WM", "Th-BB-BB-RM"]
-           ,["Fi-Fi-Th-Th", "Th-Th-WM-WM"]
-           ,["BB-RM-BM-BM", "Th-Th-BM-BM"]
-           ,["Th-WM-WM-BM", "Th-Th-RM-BM"]
-           ,["BB-BM-BM-BM", "WM-WM-WM-WM"]
-           ,["Th-BB-RM-RM", "Th-BB-WM-WM"]
-           ,["Fi-Th-BB-BM", "Fi-BB-BM-BM"]
-           ,["Fi-Fi-Fi-BM", "BB-BB-WM-BM"]],
-    round2:[["", ""]
-           ,["", ""]
-           ,["", ""]
-           ,["", ""]],
-    round3:[["", ""]
-           ,["", ""]],
-    round4:[["", ""]],
-    round5:[""]};
-  
-  var Gaia = {
-    round1:[["RM-WM-WM-WM", "Fi-Th-WM-WM"]
-           ,["Th-Th-BB-RM", "BB-WM-WM-BM"]
-           ,["BB-BB-RM-RM", "Fi-Th-Th-Th"]
-           ,["Fi-Th-Th-BB", "Fi-Fi-BB-WM"]
-           ,["Fi-BB-BB-RM", "RM-RM-RM-BM"]
-           ,["Fi-WM-WM-WM", "Fi-Th-WM-BM"]
-           ,["BB-RM-WM-WM", "BB-BB-BM-BM"]
-           ,["Fi-WM-WM-BM", "Fi-Fi-BB-BB"]],
-    round2:[["", ""]
-           ,["", ""]
-           ,["", ""]
-           ,["", ""]],
-    round3:[["", ""]
-           ,["", ""]],
-    round4:[["", ""]],
-    round5:[""]}; 
-  
-  var Lefein = {
-    round1:[["Th-RM-RM-RM", "RM-RM-WM-BM"]
-           ,["Fi-Fi-Th-RM", "Th-BB-BB-WM"]
-           ,["RM-WM-BM-BM", "Fi-Fi-Fi-WM"]
-           ,["Th-BB-BB-BM", "Fi-Fi-Th-BB"]
-           ,["Fi-Fi-WM-WM", "Fi-Fi-Th-WM"]
-           ,["Th-Th-BB-WM", "Fi-Th-RM-BM"]
-           ,["Th-RM-WM-WM", "Fi-Fi-Fi-Th"]
-           ,["Th-Th-RM-RM", "Fi-RM-RM-WM"]],
-    round2:[["", ""]
-           ,["", ""]
-           ,["", ""]
-           ,["", ""]],
-    round3:[["", ""]
-           ,["", ""]],
-    round4:[["", ""]],
-    round5:[""]}; 
-  
   var Championship = {
     round1:[["WM-BM-BM-BM", "BB-WM-WM-WM"] // Coneria v Pravoka
            ,["WM-WM-BM-BM", "WM-WM-WM-BM"] // Elfland v Melmond
-           ,["BM-BM-BM-BM", ""] // Crescent Lake v Onrac
-           ,["", ""]] // Gaia v Lefein
+           ,["BM-BM-BM-BM", "WM-WM-WM-WM"] // Crescent Lake v Onrac
+           ,["Fi-WM-WM-WM", "Fi-Fi-WM-WM"]] // Gaia v Lefein
    ,round2:[["", ""]
            ,["", ""]]
    ,round3:[["", ""]]
@@ -153,6 +99,60 @@ var FFRegionData = (function() {
              ,["Fi-Fi-WM-BM", "Fi-BB-BB-BM"]],
       round4:[["BM-BM-BM-BM", "Fi-Fi-WM-BM"]],
       round5:["BM-BM-BM-BM"]};
+  
+  var Onrac = {
+      round1:[["BB-RM-RM-WM", "Th-BB-BB-RM"]
+             ,["Fi-Fi-Th-Th", "Th-Th-WM-WM"]
+             ,["BB-RM-BM-BM", "Th-Th-BM-BM"]
+             ,["Th-WM-WM-BM", "Th-Th-RM-BM"]
+             ,["BB-BM-BM-BM", "WM-WM-WM-WM"]
+             ,["Th-BB-RM-RM", "Th-BB-WM-WM"]
+             ,["Fi-Th-BB-BM", "Fi-BB-BM-BM"]
+             ,["Fi-Fi-Fi-BM", "BB-BB-WM-BM"]],
+      round2:[["Th-BB-BB-RM", "Th-Th-WM-WM"]
+             ,["BB-RM-BM-BM", "Th-WM-WM-BM"]
+             ,["WM-WM-WM-WM", "Th-BB-WM-WM"]
+             ,["Fi-BB-BM-BM", "BB-BB-WM-BM"]],
+      round3:[["Th-Th-WM-WM", "Th-WM-WM-BM"]
+             ,["WM-WM-WM-WM", "Fi-BB-BM-BM"]],
+      round4:[["Th-WM-WM-BM", "WM-WM-WM-WM"]],
+      round5:["WM-WM-WM-WM"]};
+  
+  var Gaia = {
+      round1:[["RM-WM-WM-WM", "Fi-Th-WM-WM"]
+             ,["Th-Th-BB-RM", "BB-WM-WM-BM"]
+             ,["BB-BB-RM-RM", "Fi-Th-Th-Th"]
+             ,["Fi-Th-Th-BB", "Fi-Fi-BB-WM"]
+             ,["Fi-BB-BB-RM", "RM-RM-RM-BM"]
+             ,["Fi-WM-WM-WM", "Fi-Th-WM-BM"]
+             ,["BB-RM-WM-WM", "BB-BB-BM-BM"]
+             ,["Fi-WM-WM-BM", "Fi-Fi-BB-BB"]],
+      round2:[["RM-WM-WM-WM", "BB-WM-WM-BM"]
+             ,["BB-BB-RM-RM", "Fi-Fi-BB-WM"]
+             ,["Fi-BB-BB-RM", "Fi-WM-WM-WM"]
+             ,["BB-BB-BM-BM", "Fi-WM-WM-BM"]],
+      round3:[["BB-WM-WM-BM", "Fi-Fi-BB-WM"]
+             ,["Fi-WM-WM-WM", "Fi-WM-WM-BM"]],
+      round4:[["BB-WM-WM-BM", "Fi-WM-WM-WM"]],
+      round5:["Fi-WM-WM-WM"]}; 
+  
+  var Lefein = {
+      round1:[["Th-RM-RM-RM", "RM-RM-WM-BM"]
+             ,["Fi-Fi-Th-RM", "Th-BB-BB-WM"]
+             ,["RM-WM-BM-BM", "Fi-Fi-Fi-WM"]
+             ,["Th-BB-BB-BM", "Fi-Fi-Th-BB"]
+             ,["Fi-Fi-WM-WM", "Fi-Fi-Th-WM"]
+             ,["Th-Th-BB-WM", "Fi-Th-RM-BM"]
+             ,["Th-RM-WM-WM", "Fi-Fi-Fi-Th"]
+             ,["Th-Th-RM-RM", "Fi-RM-RM-WM"]],
+      round2:[["RM-RM-WM-BM", "Th-BB-BB-WM"]
+             ,["RM-WM-BM-BM", "Th-BB-BB-BM"]
+             ,["Fi-Fi-WM-WM", "Fi-Th-RM-BM"]
+             ,["Th-RM-WM-WM", "Fi-RM-RM-WM"]],
+      round3:[["Th-BB-BB-WM", "RM-WM-BM-BM"]
+             ,["Fi-Fi-WM-WM", "Fi-RM-RM-WM"]],
+      round4:[["RM-WM-BM-BM", "Fi-Fi-WM-WM"]],
+      round5:["Fi-Fi-WM-WM"]}; 
   
   var all = {"coneria":{rounds:Coneria, name:"Coneria"}
             ,"pravoka":{rounds:Pravoka, name:"Pravoka"}
