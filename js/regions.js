@@ -5,10 +5,10 @@ var FFRegionData = (function() {
            ,["WM-WM-BM-BM", "WM-WM-WM-BM"] // Elfland v Melmond
            ,["BM-BM-BM-BM", "WM-WM-WM-WM"] // Crescent Lake v Onrac
            ,["Fi-WM-WM-WM", "Fi-Fi-WM-WM"]] // Gaia v Lefein
-   ,round2:[["", ""]
-           ,["", ""]]
-   ,round3:[["", ""]]
-   ,round4:[""]};
+   ,round2:[["WM-BM-BM-BM", "WM-WM-WM-BM"]
+           ,["WM-WM-WM-WM", "Fi-WM-WM-WM"]]
+   ,round3:[["WM-WM-WM-BM", "WM-WM-WM-WM"]]
+   ,round4:["WM-WM-WM-WM"]};
   
   var Coneria = {
       round1:[["Fi-Fi-BM-BM", ""]

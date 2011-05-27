@@ -63,3 +63,6 @@ h4 a:hover { color:red; }
 .party.mirror .charImage.RM { background-position:-72px 0; }
 .party.mirror .charImage.WM { background-position:-36px 0; }
 .party.mirror .charImage.BM { background-position:0 0; }
+
+.champion.bracket .party { padding-left:20px; }
+.champion.bracket .party .charImage { background-image:url(../images/char_classes_victory_anim.gif); }

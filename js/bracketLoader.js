@@ -86,9 +86,11 @@ var FFBracketLoader = (function() {
           var $round = $bracket.find($rounds[roundNum - 1]);
           renderParty($round, matchup[0]).addClass(mirrored ? "mirror" : "");
           renderParty($round, matchup[1]).addClass(mirrored ? "mirror" : "").addClass("bottom");
-        } else {
+        } else if (jQuery.isArray(matchup)) {
           renderParty($leftBracket.find($rounds[roundNum - 1]), matchup[0]);
           renderParty($rightBracket.find($rounds[roundNum - 1]), matchup[1]).addClass("mirror");
+        } else {
+          renderParty($(".champion.bracket"), matchup);
         }
       }
     }
